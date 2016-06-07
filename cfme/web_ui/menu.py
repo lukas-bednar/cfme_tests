@@ -56,14 +56,14 @@ class Menu(UINavigate):
 
     # Upstream locators
     ROOT = '//ul[@id="maintab"]/..'
-    NAMED_LEV = ('/../div/ul[contains(@class,"list-group")]/li[contains(@class,"list-group-item")]'
+    NAMED_LEV = ('/../div/ul[contains(@class,"list-group")]/li[contains(@class,"list-group-item.*")]'
         '/a[normalize-space(.)="{}"]')
     NAMED_LEV_HREF = (
-        '/../div/ul[contains(@class,"list-group")]/li[contains(@class,"list-group-item")]'
+        '/../div/ul[contains(@class,"list-group")]/li[contains(@class,"list-group-item.*")]'
         '/a[@href="{}"]')
     ACTIVE_LEV = ('/../div/ul[contains(@class,"list-group")]/li[contains(@class,"active")]'
         '/a')
-    ANY_LEV = ('/../div/ul[contains(@class,"list-group")]/li[contains(@class,"list-group-item")]'
+    ANY_LEV = ('/../div/ul[contains(@class,"list-group")]/li[contains(@class,"list-group-item.*")]'
         '/a')
 
     def __init__(self):
